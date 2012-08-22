@@ -1,4 +1,4 @@
-Java keystore SSL/HTTPS Test
+Java Keystore SSL/HTTPS Test
 ====================
 
 To use, simply run from the command line:
