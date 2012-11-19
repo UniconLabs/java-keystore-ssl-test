@@ -13,6 +13,7 @@ import java.util.logging.Level;
 
 public class Test extends Formatter {
   public static void main(String[] args) throws Exception {
+    System.setProperty("java.net.preferIPv4Stack" , "true");
     
     Logger theLogger = Logger.getLogger(Test.class.getName());
     theLogger.setUseParentHandlers(false);
