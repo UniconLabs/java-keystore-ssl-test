@@ -5,7 +5,7 @@ To use, simply run from the command line:
 
 `java Test https://www.google.com`
 
-To compile first and the use, execute:
+To compile first and then use, execute:
 
 ```
 javac Test.java 
