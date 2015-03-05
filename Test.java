@@ -3,6 +3,7 @@ import java.io.InputStreamReader;
 
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.HttpURLConnection;
 
 import java.util.logging.ConsoleHandler;
 import java.util.logging.SimpleFormatter;
@@ -46,6 +47,11 @@ public class Test extends Formatter {
       BufferedReader in = new BufferedReader(reader);
       
       in.readLine();
+      
+      if (conn instanceof HttpURLConnection) {
+        int code = ((HttpURLConnection)conn).getResponseCode();
+        theLogger.info("Response status code received " + code);
+      }
       
       in.close();
       reader.close();
