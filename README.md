@@ -4,13 +4,17 @@ Java CLI utility to execute outbound HTTPS calls.
 
 ##Build
 ```
-javac Test.java 
-java Test https://www.google.com
+mvn clean package
 ```
 
 ##Usage
+
+- Download the JAR from [here](https://github.com/UniconLabs/java-keystore-ssl-test/releases)
+
+- Run:
+
 ```
-java Test <https://address.server.edu> [timeout]
+java -jar <jar-file-name> <https://address.server.edu> [timeout]
 ```
 
 ##Sample
