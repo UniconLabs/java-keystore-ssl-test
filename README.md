@@ -2,12 +2,12 @@ Java Keystore SSL/HTTPS Test
 ====================
 Java CLI utility to execute outbound HTTPS calls. 
 
-##Build
+## Build
 ```
 mvn clean package
 ```
 
-##Usage
+## Usage
 
 - Download the JAR from [here](https://github.com/UniconLabs/java-keystore-ssl-test/releases)
 
@@ -17,9 +17,9 @@ mvn clean package
 java -jar <jar-file-name> <https://address.server.edu> [timeout]
 ```
 
-##Sample
+## Sample
 
-###Successful connection
+### Successful connection
 ```
 [INFO]  Received host address https://www.google.com
 [INFO]  Setting connection timeout to 5 second(s).
@@ -27,7 +27,7 @@ java -jar <jar-file-name> <https://address.server.edu> [timeout]
 [INFO]  Great! It worked.
 ```
 
-###Failed connection
+### Failed connection
 ```
 [INFO]  Received host address https://registry.npmjs.org/sailthru-client
 [INFO]  Setting connection timeout to 5 second(s).
