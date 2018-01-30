@@ -14,7 +14,24 @@ mvn clean package
 - Run:
 
 ```
-java -jar <jar-file-name> <https://address.server.edu> [timeout]
+Usage: 
+java -jar <jar-file-name> OPTIONS <https://address.server.edu> [TIMEOUT]
+
+OPTIONS:
+   [--debug] Specify if you want debug trace output.
+   [--no-verify] Turn off SSL verification of the certificate.
+   [--proxy=<http://proxy.example.com:port>] A valid URL to the proxy host (with port).
+   [--proxyUser=<user> --proxyPass=<pass>] If you specify a proxyUser, also specify password.
+   [--keystore=<keystore.jks>] The location for an alternative keystore (full path or relative to current dir).
+   [--keypass] The password for the keystore.
+   [--truststore=<truststore.jks>] The location of an alternative truststore (full path or relative to current dir).   
+   [--trustpass] The password for the truststore.
+
+
+URL: A valid URL such as: https://address.server.edu
+
+TIMEOUT: timeout in seconds (default is 5).
+
 ```
 
 ## Sample
