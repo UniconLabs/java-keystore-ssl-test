@@ -11,7 +11,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>1.4.0.RELEASE</version>
+            <version>1.5.9.RELEASE</version>
         </dependency>
     </dependencies>
     <build>
@@ -19,7 +19,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.4.0.RELEASE</version>
+                <version>1.5.9.RELEASE</version>
                 <executions>
                     <execution>
                         <goals>
