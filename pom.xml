@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.unicon</groupId>
     <artifactId>java-keystore-test</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <name>Java keystore test</name>
     <packaging>jar</packaging>
     <description>Java CLI utility to execute outbound HTTPS calls.</description>
@@ -27,6 +27,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
