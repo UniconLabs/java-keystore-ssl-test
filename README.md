@@ -14,7 +14,7 @@ mvn clean package
 - Run:
 
 ```
-java -jar <jar-file-name> <https://address.server.edu> [timeout]
+java -jar <jar-file-name> [--detailed] <https://address.server.edu> [timeout]
 ```
 
 ## Sample
@@ -72,3 +72,31 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
         ... 18 more
 ```
  
+### Detailed (--forced) Dump
+
+```
+INFO  - Received host address https://expired.badssl.com/ 
+INFO  - Setting connection timeout to 5 second(s). 
+INFO  - HTTPS Connection: setting custom handler 
+INFO  - Trying to connect to https://expired.badssl.com/ 
+INFO  - Response status code received 200 
+INFO  - Detected Truststore: SunJSSE 
+INFO  -   Trusted issuers found: 104 
+INFO  - Server provided certs:  
+INFO  -   subject: CN=*.badssl.com, OU=PositiveSSL Wildcard, OU=Domain Control Validated 
+INFO  -   issuer: CN=COMODO RSA Domain Validation Secure Server CA, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB 
+INFO  -   expiration: Wed Apr 08 17:00:00 PDT 2015 - Sun Apr 12 16:59:59 PDT 2015 (invalid) 
+INFO  -   trust anchor not matched in trust store (which is expected of the host certificate that is part of a chain) 
+INFO  - --- 
+INFO  -   subject: CN=COMODO RSA Domain Validation Secure Server CA, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB 
+INFO  -   issuer: CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB 
+INFO  -   expiration: Tue Feb 11 16:00:00 PST 2014 - Sun Feb 11 15:59:59 PST 2029 (valid) 
+INFO  -   trust anchor matched found: CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB 
+INFO  - --- 
+INFO  -   subject: CN=COMODO RSA Certification Authority, O=COMODO CA Limited, L=Salford, ST=Greater Manchester, C=GB 
+INFO  -   issuer: CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE 
+INFO  -   expiration: Tue May 30 03:48:38 PDT 2000 - Sat May 30 03:48:38 PDT 2020 (valid) 
+INFO  -   trust anchor matched found: CN=AddTrust External CA Root, OU=AddTrust External TTP Network, O=AddTrust AB, C=SE 
+INFO  - --- 
+INFO  - Completed. See the info above for details. 
+```
