@@ -14,7 +14,7 @@ mvn clean package
 - Run:
 
 ```
-java -jar <jar-file-name> [--detailed] <https://address.server.edu> [timeout]
+java -jar <jar-file-name> [--forced] <https://address.server.edu> [timeout]
 ```
 
 ## Sample
